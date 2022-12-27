@@ -1,0 +1,16 @@
+#top {
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: White;
+    background-color: gray;
+
+}
+
+#cvs {
+    position:absolute;
+};
+
+#image {
+    display:none;
+}
