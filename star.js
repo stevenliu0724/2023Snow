@@ -4,7 +4,7 @@ let stars = [];
 let ministars = [];
 let backgroundstars = [];
 let interval = 0;
-const groundheight = 50;
+const groundheight = 30;
 
 
 canvas.width = window.innerWidth;
@@ -80,7 +80,7 @@ class Ministar {
     constructor(x, y, r, color) {
         this.x = x;
         this.y = y;
-        this.r = Math.random() * 2;
+        this.r = Math.random() * 1.5;
         this.color = color;
         this.velocity = {
             x: randomXY(-5, 5),
@@ -175,7 +175,7 @@ function animate() {
 
     if(interval % randomXY(5, 100) == 0) {
         const x = Math.random() * canvas.width
-        stars.push(new Star(x, -100, 15, "white"))
+        stars.push(new Star(x, -100, 10, "white"))
     }
 
 };
